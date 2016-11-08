@@ -1,0 +1,20 @@
+{
+    "name": "relaxsd/l4-postcode-nl",
+    "description": "A Laravel 4 service to the postcode.nl api.",
+    "authors": [
+        {
+            "name": "Martijn Kriek",
+            "email": "martijn.kriek@relax-software.nl"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "postcode-nl/api-restclient": "^1.1.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "Relaxsd\\PostcodeNl\\": "src/"
+        }
+    }
+}
