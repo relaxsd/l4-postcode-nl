@@ -32,7 +32,8 @@ class PostcodeNlServiceProvider extends ServiceProvider {
 			'postcode-nl', function () {
 				$api = new \PostcodeNl_Api_RestClient(
 					\Config::get('postcode-nl::postcode-nl.app-key'),
-					\Config::get('postcode-nl::postcode-nl.app-secret')
+					\Config::get('postcode-nl::postcode-nl.app-secret'),
+					\Config::get('postcode-nl::postcode-nl.rest-api-url')
 				);
 				$api->setDebugEnabled(\Config::get('app.debug'));
 				return $api;
